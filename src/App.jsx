@@ -1,12 +1,14 @@
 import './App.css'
 import {ProductCard} from "./components/product-card.jsx";
 import {Filter} from "./components/filter.jsx";
+import {Search} from "./components/search.jsx";
 import {categories, products} from "./data/products.js";
 
 function App() {
 
   return (
     <>
+      <Search />
       <Filter categories={categories} />
 
       <div className="product-list">
